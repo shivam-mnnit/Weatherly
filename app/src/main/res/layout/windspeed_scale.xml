@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup_windspeed"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/kmh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="km/h"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <RadioButton
+            android:id="@+id/ms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kmh"
+            android:text="m/s"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="48dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <RadioButton
+            android:id="@+id/mph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ms"
+            android:text="mph"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="48dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <RadioButton
+            android:id="@+id/knots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mph"
+            android:text="knots"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ok_windspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/radioGroup_windspeed"
+        android:background="@color/colorAccent"
+        android:text="Ok"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

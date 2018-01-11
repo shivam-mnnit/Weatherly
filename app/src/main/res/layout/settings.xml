@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="5dp"
+    android:background="#3F51B5">
+
+    <Button
+        android:id="@+id/temperature_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperature scale"
+        android:textColor="#FFFFFF"
+        android:background="#3F51B5"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="left"/>
+
+    <Button
+        android:id="@+id/pressure_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperature_change"
+        android:text="Pressure scale"
+        android:textColor="#FFFFFF"
+        android:background="#3F51B5"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="left"/>
+
+    <Button
+        android:id="@+id/windspeed_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pressure_change"
+        android:text="Wind speed scale"
+        android:textColor="#FFFFFF"
+        android:background="#3F51B5"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="left"/>
+
+</LinearLayout>

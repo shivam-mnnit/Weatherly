@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup_temperature"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/celsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <RadioButton
+            android:id="@+id/fahrenhiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/celsius"
+            android:text="Fahrenheit"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="48dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <RadioButton
+            android:id="@+id/kelvin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fahrenhiet"
+            android:text="Kelvin"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ok_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/radioGroup_temperature"
+        android:text="Ok"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
