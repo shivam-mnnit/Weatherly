@@ -46,12 +46,9 @@ public class MainActivity extends AppCompatActivity
 {
 
     TextView cityField, detailsField, currentTemperatureField, humidity_field, pressure_field, weatherIcon, updatedField, windspeed;
-
     Typeface weatherFont;
-
     private ProgressDialog pDialog;
     private String url;
-
     final String[] z = {""};
 
     public static final String PREFS = "examplePrefs";
@@ -76,7 +73,6 @@ public class MainActivity extends AppCompatActivity
         //getLocation();
 
         weatherFont = Typeface.createFromAsset(getAssets(), "fonts/weathericons-regular-webfont.ttf");
-
         windspeed = (TextView)findViewById(R.id.wind_speed);
         cityField = (TextView)findViewById(R.id.city_field);
         updatedField = (TextView)findViewById(R.id.updated_field);
@@ -94,7 +90,6 @@ public class MainActivity extends AppCompatActivity
             editor.putString("message", "Allahabad, Uttar Pradesh, India 25.4358 81.8463");
             editor.commit();
         }
-
         SharedPreferences ex2 = getSharedPreferences(PREFS, 0);
         String c1=ex2.getString("message", "not found");
 
@@ -456,12 +451,10 @@ public class MainActivity extends AppCompatActivity
                                 .show();
                     }
                 });
-
             }
 
             return null;
         }
-
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
